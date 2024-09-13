@@ -12,9 +12,9 @@ public class GatewayConfig {
 	public RouteLocator  customRouteLocator(RouteLocatorBuilder builder) {
 		return builder.routes()
 	            .route("ms-business", r -> r.path("/api/business/**")
-	                .uri("http://localhost:8081"))
+	                .uri("https://app-lite-business-64921b5b3bb9.herokuapp.com"))
 	            .route("ms-auth", r -> r.path("/api/auth/**")
-	                .uri("http://localhost:8082"))
+	                .uri("https://app-lite-auth-c04dbb37c33d.herokuapp.com"))
 	            .build();
 	}
 }
