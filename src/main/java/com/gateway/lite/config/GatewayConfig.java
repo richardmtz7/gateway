@@ -11,10 +11,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class GatewayConfig implements WebMvcConfigurer {
 	
-	@Value("${BUSINESS_SERVICE_URI}")
+	@Value("${url.business}")
     private String businessServiceUri;
 
-    @Value("${AUTH_SERVICE_URI}")
+    @Value("${url.auth}")
     private String authServiceUri;
     
     @Value("${url.front}")
